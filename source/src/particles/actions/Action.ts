@@ -13,14 +13,14 @@ export default class Action {
     }
 
     public removedFromEmitter(emitter: Emitter): void {
-        console.log('action removedFromEmitter')
+        // console.log('action removedFromEmitter')
     }
 
     public addedToEmitter(emitter: Emitter): void {
-        console.log('action addedToEmitter')
+        // console.log('action addedToEmitter')
     }
 
     public update(emitter: Emitter, particle: Particle, time: number): void {
-        console.log('action update')
+        // console.log('action update')
     }
 }

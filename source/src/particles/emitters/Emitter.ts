@@ -23,6 +23,31 @@ export default class Emitter {
 
     protected _running = false;
 
+    private _eventTypes: {[key: string]: number} = {};
+    private _eventDispatcher: HTMLElement;
+
+    constructor() {
+        this._eventDispatcher = document.createElement('div');
+    }
+
+    public addEventListener(type: string, callback: EventListenerOrEventListenerObject): void {
+        this._eventTypes[type] = this._eventTypes[type] ? this._eventTypes[type] + 1 : 1;
+        this._eventDispatcher.addEventListener(type, callback);
+    }
+
+    public removeEventListener(type: string, callback: EventListenerOrEventListenerObject): void {
+        this._eventTypes[type] = this._eventTypes[type] && this._eventTypes[type] > 1 ? this._eventTypes[type] - 1 : 0;
+        this._eventDispatcher.removeEventListener(type, callback);
+    }
+
+    public hasEventListener(type: string): boolean {
+        return !!this._eventTypes[type];
+    }
+
+    public dispatchEvent(event: CustomEvent): void {
+        this._eventDispatcher.dispatchEvent(event);
+    }
+
     public get counter(): Counter {
         return this._counter;
     }

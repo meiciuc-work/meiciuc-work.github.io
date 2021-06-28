@@ -1,4 +1,5 @@
 import Emitter from "../emitters/Emitter";
+import ParticleEvents from "../events/ParticleEvents";
 import Particle from "../particles/Particle2D";
 import { Zone2D } from "../zones/Zone2D";
 import Action from "./Action";
@@ -65,5 +66,12 @@ export default class CollisionZone extends Action {
      */
     public update(emitter: Emitter, particle: Particle, time: number): void {
         const collide = this._zone.collideParticle(particle, this._bounce);
+        if (collide && emitter.hasEventListener(ParticleEvents.ZONE_COLLISION)) {
+            const options = {detail: {
+                particle: particle,
+                action: this
+            }};
+            emitter.dispatchEvent(new CustomEvent(ParticleEvents.ZONE_COLLISION, options));
+        }
     }
 }

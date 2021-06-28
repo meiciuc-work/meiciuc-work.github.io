@@ -10,6 +10,7 @@
  */
 
 import Emitter from "../emitters/Emitter";
+import ParticleEvents from "../events/ParticleEvents";
 import Particle from "../particles/Particle2D";
 import Action from "./Action";
 
@@ -116,24 +117,35 @@ export default class BoundingBox extends Action {
     public update(emitter: Emitter, particle: Particle, time: number): void {
         const p: Particle = particle;
         const radius = particle.collisionRadius;
+        let collide = false;
         let position;
         if (p.velX > 0 && (position = p.x + radius) >= this._right) {
             p.velX = -p.velX * this._bounce;
             p.x += 2 * (this._right - position);
+            collide = true;
         }
         else if (p.velX < 0 && (position = p.x - radius) <= this._left) {
             p.velX = -p.velX * this._bounce;
             p.x += 2 * (this._left - position);
+            collide = true;
         }
         if (p.velY > 0 && (position = p.y + radius) >= this._bottom) {
             p.velY = -p.velY * this._bounce;
             p.y += 2 * (this._bottom - position);
-
+            collide = true;
         }
         else if (p.velY < 0 && (position = p.y - radius) <= this._top) {
             p.velY = -p.velY * this._bounce;
             p.y += 2 * (this._top - position);
+            collide = true;
+        }
 
+        if (collide && emitter.hasEventListener(ParticleEvents.BOUNDING_BOX_COLLISION)) {
+            const options = {detail: {
+                particle: particle,
+                action: this
+            }};
+            emitter.dispatchEvent(new CustomEvent(ParticleEvents.BOUNDING_BOX_COLLISION, options));
         }
     }
 }
