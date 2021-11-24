@@ -1,0 +1,50 @@
+key	Комментарий	Тип Объекта	lang-en	Max Chars	Chars Left	lang-fr
+menu_title	Главное меню	Текстовый блок	KICKIN' IT!	20	5	KICKIN' IT!
+menu_play	Главное меню	Кнопка	Play	20	16	Jouer
+menu_leaderboard	Главное меню	Кнопка	Leaderboard	20	9	Classement
+menu_settings	Главное меню	Кнопка	Settings	20	12	Paramètres
+menu_prizes	Главное меню	Кнопка	My Prizes	20	14	MES GAINS
+character_choice_select	Выбор персонажа	Кнопка	Select	20	14	Sélectionner
+character_choice_unlock	Выбор персонажа	Кнопка	Unlock: {X}	20	9	Déverrouiller: {X}
+tutorial_title	Игровой процесс, туториал	Текстовый блок	How to Play	20	9	
+tutorial_ground_tap	Игровой процесс, туториал	Текстовый блок	Tap to Jump	20	9	Appuyez pour sauter
+tutorial_ground_double_tap	Игровой процесс, туториал	Текстовый блок	Double tap to flip	40	16	Appuyez deux fois pour sauter
+gameplay_distance	Игровой процесс	Текстовый блок	{X} ft	20	14	{X} pieds
+settings_title	Главное меню, настройки	Текстовый блок	Settings	20	12	Paramètres
+settings_close	Главное меню, настройки	Кнопка	Close	20	15	Fermer
+leaderboard_title	Лидерборд	Текстовый блок	Leaderboard	20	9	Classement
+leaderboard_distance	Лидерборд	Текстовый блок	{X} ft	20	14	{X} pieds
+pause_title	Диалог паузы	Текстовый блок	Pause	20	15	Pause
+pause_resume	Диалог паузы	Кнопка	Resume	20	14	Reprendre
+pause_main_menu	Диалог паузы	Кнопка	Main Menu	20	11	Menu principal
+exit_confirmation_title	Подтверждение выхода	Текстовый блок	Exit	20	16	Sortir
+exit_confirmation_body	Подтверждение выхода	Текстовый блок	All current progress will be lost! Are you sure?	100	52	Tous les progrès actuels seront perdus! Êtes-vous sûr?
+exit_confirmation_yes	Подтверждение выхода	Кнопка	Yes	20	17	Oui
+exit_confirmation_no	Подтверждение выхода	Кнопка	No	20	18	Non
+end_screen_title	Диалог завершения уровня	Текстовый блок	Nice run!	20	11	Belle course!
+end_screen_highscore	Диалог завершения уровня	Текстовый блок	New Highscore!	20	9	Nouveau record!
+end_screen_distance	Диалог завершения уровня	Текстовый блок	{X} ft	20	14	{X} pieds
+end_screen_earnings	Диалог завершения уровня	Текстовый блок	You have earned {X}	20	1	Vous avez gagné {X}
+end_screen_restart	Диалог завершения уровня	Кнопка	Try again	20	11	Réessayer
+end_screen_main_menu	Диалог завершения уровня	Кнопка	Main Menu	20	11	Menu principal
+end_screen_leaderboard	Диалог завершения уровня	Кнопка	Leaderboard	20	9	Classement
+end_screen_prizes	Диалог завершения уровня	Кнопка	MY PRIZES	20	14	MES GAINS
+prizes_title	Диалог призов	Текстовый блок	MY PRIZES	20	14	MES GAINS
+prizes_sum	Диалог призов	Текстовый блок	You have {X}	20	8	Vous avez {X}
+prizes_prize_draw	Диалог призов	Текстовый блок	Prize Draw	20	10	Tirage au sort
+prizes_prize_draw_sum	Диалог призов	Текстовый блок	You have {X} entries	40	20	Vous avez {X} entrées
+prizes_prize_draw_button	Диалог призов	Кнопка	Entry: {X}	20	10	Entrée: {X}
+prizes_promo	Диалог призов	Текстовый блок	Promo codes	20	9	Code promo
+prizes_promo_body	Диалог призов	Текстовый блок	Get promo codes for boohooMAN store	40	5	Obtenez des codes promos boohooMAN
+prizes_mypromo	Диалог призов	Кнопка	My promo codes	20	6	Mes codes promo
+mypromo_title	Диалог купонов игрока	Текстовый блок	My promo codes	20	6	Mes codes promo
+get_promo_code_title	Диалог получения промо-кода	Текстовый блок	Your Promo Code!	20	4	Votre code promo !
+promo_1			WIN 2 x TICKETS TO THE EUROS FINAL	100	66	Gagnez 2 billets pour la finale de l'euro
+promo_1_catch			YOU’VE ENTERED THE PRIZE DRAW	100	66	Vous êtes inscrits au tirage au sort
+promo_2			EXTRA 10% OFF YOUR NEXT ORDER	100	71	-10% sur votre prochaine commande
+promo_3			FREE DELIVERY ON YOUR NEXT ORDER	100	68	Livraison gratuite sur votre prochaine commande
+introscreen_header_text			KICK IT FOR A CHANCE TO WIN EXCLUSIVE DISCOUNTS & 2 TICKETS TO THE EUROS FINAL	100	22	COUP D’ENVOI POUR TENTER DE GAGNER DES RÉDUCTIONS EXCLUSIVES ET 2 BILLETS POUR LA FINALE DE L’EURO
+myprize_title			MY PRIZE	20	12	PRIX
+myprize_ok			Ok	20	18	Envoyer
+score			score	20	18	Note
+tap_to_start			TAP TO START	20	18	Cliquez pour jouer

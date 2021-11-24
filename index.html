@@ -1,1 +1,60 @@
-<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vue App</title><link href="/css/app.abfe50ad.css" rel="preload" as="style"><link href="/js/app.05f7eb15.js" rel="preload" as="script"><link href="/js/chunk-vendors.94093336.js" rel="preload" as="script"><link href="/css/app.abfe50ad.css" rel="stylesheet"></head><body><div id="app"></div><script src="/js/chunk-vendors.94093336.js"></script><script src="/js/app.05f7eb15.js"></script></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,initial-scale=1' name='viewport'/>
+    <title>btc-tron-idle-pvp</title>
+    <style>
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        #gamePlace {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+
+    <!--<script defer src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>-->
+</head>
+
+<script>
+    var height = window.innerHeight;
+
+    var a = setInterval(function () {
+        if (!window.INPUT_ACTIVE) {
+            resize();
+        }
+    }, 500);
+
+    window.addEventListener("resize", function () {
+        resize();
+    });
+
+    var resize = function () {
+        if (!window.INPUT_ACTIVE) {
+            var newHeight = window.innerHeight;
+            if (newHeight != height) {
+                height = newHeight;
+                document.getElementById("gamePlace").style.height = height + "px";
+                window.scrollTo({top: 0});
+            }
+        }
+    };
+</script>
+
+<body>
+<div id='gamePlace' style='height: 100%'></div>
+<script src='build/pixi.js?4b8a4d59f47b745d91ed'></script>
+<script src='build/main.js?4b8a4d59f47b745d91ed'></script>
+</body>
+</html>
