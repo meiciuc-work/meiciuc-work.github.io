@@ -1,60 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'/>
-    <meta content='width=device-width,initial-scale=1' name='viewport'/>
-    <title>btc-tron-idle-pvp</title>
-    <style>
-        html,
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><meta name="theme-color" content="#000000"/><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="application-name" content="mahjong"/><meta name="apple-mobile-web-app-title" content="mahjong"/><meta name="msapplication-starturl" content="./"/><link rel="icon" type="image/x-icon" href="/favicon.ico"/><link rel="apple-touch-icon" type="image/x-icon" href="/favicon.ico"/><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/><title>mahjong</title><style>html,
         body {
-            margin: 0px;
-            padding: 0px;
-            border: 0px;
-            width: 100%;
             height: 100%;
-        }
-
-        #gamePlace {
-            width: 100%;
-            height: 100%;
+            margin: 0;
+            background: black;
             overflow: hidden;
         }
-    </style>
 
-    <!--<script defer src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-<script defer src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
-<script defer src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
-<script defer src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>-->
-</head>
-
-<script>
-    var height = window.innerHeight;
-
-    var a = setInterval(function () {
-        if (!window.INPUT_ACTIVE) {
-            resize();
+        #cursor{
+            width: 100px;
+            height: 100px;
+            user-select: none;
+            pointer-events: none;
+            z-index: "9999";
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            border: none;
+            background-color: transparent;
         }
-    }, 500);
 
-    window.addEventListener("resize", function () {
-        resize();
-    });
-
-    var resize = function () {
-        if (!window.INPUT_ACTIVE) {
-            var newHeight = window.innerHeight;
-            if (newHeight != height) {
-                height = newHeight;
-                document.getElementById("gamePlace").style.height = height + "px";
-                window.scrollTo({top: 0});
-            }
+        .fontloader {
+            position: absolute;
+            opacity: 0;
         }
-    };
-</script>
 
-<body>
-<div id='gamePlace' style='height: 100%'></div>
-<script src='build/pixi.js?4b8a4d59f47b745d91ed'></script>
-<script src='build/main.js?4b8a4d59f47b745d91ed'></script>
-</body>
-</html>
+        #ui {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+        }</style><noscript>Please enable javascript to continue using this application.</noscript><script defer="defer" src="vendors.974506ed05aa427f0920.bundle.js"></script><script defer="defer" src="main.5bcac3e5a86b2266f156.bundle.js"></script></head><body><div id="phaser-game"></div><div id="ui"></div><span class="fontloader" style="font-family: Gameplay">abc</span> <span class="fontloader" style="font-family: Space Grotesk">abc</span> <span class="fontloader" style="font-family: Space Grotesk Medium">abc</span> <span class="fontloader" style="font-family: Minecrafter-Regular">abc</span></body></html>
